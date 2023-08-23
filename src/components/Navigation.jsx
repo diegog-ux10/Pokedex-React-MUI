@@ -5,7 +5,7 @@ import { Link, Outlet, useNavigate } from "react-router-dom";
 
 import logo from "../assets/Pokédex_logo.png";
 
-import { Button, Box, Toolbar, InputBase, AppBar } from "@mui/material";
+import { Button, Box, Toolbar, InputBase, AppBar, Typography } from "@mui/material";
 
 
 import SearchIcon from "@mui/icons-material/Search";
@@ -83,8 +83,8 @@ export const Navigation = () => {
             }}
           >
             <Box>
-              <Link to="/">
-                <img src={logo} />
+              <Link to="/" >
+                <Typography variant="h4" sx={{color: "white"}}>POKEDEX</Typography>
               </Link>
             </Box>
             <Box display="flex" gap={2}>
